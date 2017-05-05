@@ -32,6 +32,6 @@ print(count)
 
 Whenever you're working with a LinkedList and its `start` and `end` nodes, you should be **extremely careful** about how you handle those nodes. **Never lose the reference to the start or end of the list**, if you do so, you'll be completely screwed up. The moment you re-assign the references to any of those nodes, they'll be completely lost in memory. This is obviously not applied if you have to **mutate** or **modify** your list. For example, if you want to _append_ an element to the list, you'll have to change the reference of the `end` node.
 
-#### Node 2
+#### Note 2
 
 All the work needed to provide the functionality of a LinkedList is done by moving around the chain of nodes. In this case we're just advancing nodes one after the other until we reach the end of our node chain.

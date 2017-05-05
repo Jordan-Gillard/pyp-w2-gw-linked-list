@@ -4,13 +4,18 @@ class Node(object):
     """
 
     def __init__(self, elem, next=None):
-        pass
+        self.elem = elem
+        self.next = next
 
     def __str__(self):
-        pass
+        return '{}'.format(self.__repr__())
 
     def __eq__(self, other):
-        pass
+        return lambda x, y: x==y, self, other
+        #return self.elem == other.elem and self.next == other.next
+            
 
     def __repr__(self):
-        pass
+        if self.next:
+            return 'Node({}) > Node({})'.format(self.elem, self.next.elem)
+        return 'Node({}) > /'.format(self.elem)
