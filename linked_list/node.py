@@ -11,8 +11,8 @@ class Node(object):
         return '{}'.format(self.__repr__())
 
     def __eq__(self, other):
-        return lambda x, y: x==y, self, other
-        #return self.elem == other.elem and self.next == other.next
+        #return lambda x, y: x==y, self, other
+        return self.elem == other.elem and self.next == other.next
             
 
     def __repr__(self):

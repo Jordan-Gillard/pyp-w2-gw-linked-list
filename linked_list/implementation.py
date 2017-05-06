@@ -14,10 +14,10 @@ class LinkedList(AbstractLinkedList):
             for elem in elements:
                 self.append(elem)
     
-    def next(self):
-        pass
+    # def next(self):
+    #     pass
         
-    __next__ = next
+    # __next__ = next
 
     def __str__(self):
         return '[{}]'.format(', '.join([str(elem) for elem in self]))
